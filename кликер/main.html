@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="click-effects-container"></div>
+<div class="container">
+    <h1>Cyber Clicker</h1>
+    <h2 id="score-display">Монеты: 0</h2>
+    <div class="stats" id="cps-display">Сила клика: 1</div>
+    <div class="stats" id="passive-display">Пассивный доход: 0/сек</div>
+    <div class="stats" id="timer-display"></div>
+    <div class="section" style="text-align: center; margin-bottom: 20px;">
+        <h3>Ежедневный бонус🎁</h3>
+        <p id="daily-timer-text">Заберите ваш подарок!</p>
+        <button class="btn btn-upgrade" id="claim-daily-btn" style="width: auto; display: inline-block; padding: 10px 30px;">Забрать бонус!</button>
+    </div>
+    <div class="click-btn-wrapper">
+        <button class="click-btn" id="click-me">КЛИК!</button>
+    </div>
+    <div class="section">
+        <h3>Магазин прокачки:</h3>
+        <button class="btn btn-upgrade" id="buy-upgrade">Улучшить клик | Цена: 10</button>
+        <button class="btn btn-passive" id="buy-passive">Автокликер | Цена: 50</button>
+        <button class="btn btn-booster" id="buy-booster">Бустер X2 (10 сек) | Цена: 150</button>
+    </div>
+    <div class="section">
+        <h3>Гардероб и картинки кнопки:</h3>
+        <div class="skin-item"><span class="skin-name text-neon">Неоновый синий</span><button class="skin-btn" id="skin-btn-neon">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name text-ruby">Рубиновый взрыв</span><button class="skin-btn" id="skin-btn-ruby">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #ffcc00;">Печенька (Картинка 1.jpg)</span><button class="skin-btn" id="skin-btn-img1">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #ff33aa;">Золотой мем (Картинка 2.jpg)</span><button class="skin-btn" id="skin-btn-img2">Загрузка...</button></div>
+    </div>
+    <div class="section">
+        <h3>Магазин тем сайта:</h3>
+        <div class="skin-item"><span class="skin-name" style="color: #007bff;">Стандартная темная</span><button class="skin-btn buy" id="theme-btn-none">Включить</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #00ffcc;">Свой фон (Любое фото из проводника)</span><input type="file" id="bg-file-input" accept="image/*" style="display: none;"><button class="skin-btn buy" id="theme-btn-custombg">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #00ff00; font-family: monospace;">Матрица</span><button class="skin-btn buy" id="theme-btn-matrix">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #af40ff;">Глубокий космос</span><button class="skin-btn buy" id="theme-btn-space">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #ff007f;">Киберпанк 2077</span><button class="skin-btn buy" id="theme-btn-cyber">Загрузка...</button></div>
+        <div class="skin-item"><span class="skin-name" style="color: #ffe066;">Чистое золото (VIP)</span><button class="skin-btn buy" id="theme-btn-gold">Загрузка...</button></div>
+    </div>
+    <button class="btn btn-reset" id="reset-btn">Сбросить весь прогресс</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
