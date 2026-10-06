@@ -1,27 +1,26 @@
 # 🚀 Cyber Clicker
 
-Интерактивная игра-кликер нового поколения, написанная полностью на чистом фронтенде (**HTML5, CSS3 и Vanilla JavaScript**) без использования сторонних тяжелых фреймворков. Проект разработан по модульной архитектуре с полным разделением разметки, стилей и логики.
+A next-generation interactive clicker game built entirely on pure frontend technologies (**HTML5, CSS3, and Vanilla JavaScript**) without any heavy third-party frameworks. The project follows a modular architecture with strict separation of markup, styles, and logic.
 
-## ✨ Основные фичи игры
-* 🎰 **Продвинутая экономика**: Прогрессивная стоимость улучшений (мультипликатор цены `x1.5` – `x1.6`).
-* 🎁 **Ежедневные награды**: Встроенная система Daily Rewards с реальным таймером обратного отсчета (24 часа), работающая через таймстампы.
-* ⚡ **Временные бустеры**: Возможность покупки Бустера X2 на 10 секунд с визуальным эффектом пульсации и последующей перезарядкой (cooldown) механизма.
-* 👕 **Инвентарь скинов для кнопки**: Магазин кастомизации кнопки (градиенты, неоновые стили) и поддержка **загрузки локальных графических ресурсов** (`1.jpg`, `2.jpg`).
-* 🖼 **Проводник фонов**: Полноценная интеграция с системным проводником через `FileReader API`. Игрок может загрузить любое фото с ПК на задний фон (с эффектом матового стекла `backdrop-filter`).
-* 💾 **Энергонезависимая память**: Полное сохранение игрового прогресса, инвентаря скинов и активных тем в `localStorage` (сериализация сложных объектов через JSON).
+## ✨ Core Features
+* 🎰 **Advanced Economy**: A progressive upgrade pricing system featuring a price multiplier (`x1.5` – `x1.6`).
+* 🎁 **Daily Rewards**: A built-in daily reward system with a real 24-hour countdown timer powered by system timestamps.
+* ⚡ **Temporary Boosters**: Purchase a 2x Booster for 10 seconds, complete with a visual pulsing effect and a subsequent cooldown mechanism.
+* 👕 **Button Skin Inventory**: A customization shop for the main clicker button (gradients, neon styles) with support for **loading local graphic assets** (`1.jpg`, `2.jpg`).
+* 🖼 **Custom Background Uploader**: Full integration with the system file explorer using the `FileReader API`. Players can upload any photo from their PC as a background with a sleek frosted glass effect (`backdrop-filter`).
+* 💾 **Persistent Storage**: Full game progress, skin inventory, and active themes are automatically saved to `localStorage` (handling complex objects via JSON serialization).
 
-## 🗂 Структура проекта
+## 🗂 Project Structure
 ```text
-├── index.html     # Каркас страницы, структура магазинов и интерфейса
-├── style.css      # Адаптивная Flexbox-верстка, кастомные темы и анимации
-└── script.js      # Игровой движок, менеджер состояний UI и работа с памятью
+├── index.html     # Page structure, shops, and UI layout
+├── style.css      # Responsive Flexbox layout, custom themes, and animations
+└── script.js      # Game engine, UI state manager, and storage handler
 ```
 
-## 🚀 Быстрый старт (Офлайн запуск)
-Для запуска игры **не требуется** установка серверов, баз данных или компиляторов.
-1. Скачайте файлы `index.html`, `style.css` и `script.js` в одну папку.
-2. (Опционально) Положите в эту же папку картинку `1.jpg` для скина кнопки.
-3. Дважды кликните по файлу `index.html`, чтобы открыть игру в любом браузере.
+## 🚀 Quick Start (Offline Launch)
+No servers, databases, or compilers are required to run this game.
+1. Download `index.html`, `style.css`, and `script.js` into a single folder.
+2. (Optional) Place an image named `1.jpg` in the same folder to use as a custom button skin.
+3. Double-click `index.html` to launch and play the game instantly in any modern browser.
 
-
-*Разработано с душой и матами на разметку чатов ИИ. Прогресс пишется локально, куки не собираются.*
+*All progress is saved locally. No cookies are collected.*
